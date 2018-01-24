@@ -33,26 +33,26 @@ Once you have an account you can log into the Amazon Web Services console.
 Launching an instance is as easy as selecting the image to load and starting the virtual server. Thankfully there is already an image available that has almost everything we need it is called the [Deep Learning AMI Amazon Linux](https://aws.amazon.com/machine-learning/amis/) Version and was created and is maintained by Amazon. Let’s launch it as an instance.
 
 - 1. Login to your AWS console.
-![AWS Console]()
+![AWS Console](https://github.com/PakistanAI/ComputeEasy/blob/master/Keras%20Deep%20Learning%20Models%20on%20AWS/images/aws-console.png)
 - 2. Click on EC2 for launching a new virtual server.
 - 3. Select “US West Orgeon” from the drop-down in the top right hand corner. Otherwise you will not be able to find the image we plan to use.
 - 4. Click the `“Launch Instance”` button.
 - 5. Click `“Community AMIs”`. An AMI is an Amazon Machine Image. It is a frozen instance of a server that you can select and instantiate on a new virtual server.
-![Community AMIs]()
+![Community AMIs](https://github.com/PakistanAI/ComputeEasy/blob/master/Keras%20Deep%20Learning%20Models%20on%20AWS/images/Community-AMIs.png)
 
 - 6. Enter `“ami-dfb13ebf”` (this is the current AMI id for v2.0 but the AMI may have been updated since, you check for a more recent id) in the “Search community AMIs” search box and press enter. You should be presented with a single result.
-![Search for Deep Learning AMI]()
+![Search for Deep Learning AMI](https://github.com/PakistanAI/ComputeEasy/blob/master/Keras%20Deep%20Learning%20Models%20on%20AWS/images/Search-for-Deep-Learning-AMI-1024x266.png)
 
 - 7. Click `“Select”` to choose the AMI in the search result.
 - 8. Now you need to select the hardware on which to run the image. Scroll down and select the `“g2.2xlarge”` hardware. This includes a GPU that we can use to significantly increase the training speed of our models.
-![Select g2.2xlarge Hardware]()
+![Select g2.2xlarge Hardware](https://github.com/PakistanAI/ComputeEasy/blob/master/Keras%20Deep%20Learning%20Models%20on%20AWS/images/Select-g2.2xlarge-Hardware.png)
 
 - 9. Click “Review and Launch” to finalize the configuration of your server instance.
 - 10. Click the “Launch” button.
 - 11. Select Your Key Pair.
   -If you have a key pair because you have used EC2 before, select “Choose an existing key pair” and choose your key pair    from the list. Then check “I” acknowledge…”.
   -If you do not have a key pair, select the option “Create a new key pair” and enter a “Key pair name” such as keras-keypair. Click the “Download Key Pair” button.
-![Select Your Key Pair]()
+![Select Your Key Pair](https://github.com/PakistanAI/ComputeEasy/blob/master/Keras%20Deep%20Learning%20Models%20on%20AWS/images/Select-Your-Key-Pair.png)
 
 - 12. Open a Terminal and change directory to where you downloaded your key pair.
 - 13. If you have not already done so, restrict the access permissions on your key pair file. This is requred as part of the SSH access to your server. For example:
@@ -62,7 +62,7 @@ Launching an instance is as easy as selecting the image to load and starting the
 
 - 14. Click “Launch Instances”. If this is your first time using AWS, Amazon may have to validate your request and this could take up to 2 hours (often just a few minutes).
 - 15. Click “View Instances” to review the status of your instance.
-![Deep Learning AMI Status]()
+![Deep Learning AMI Status](https://github.com/PakistanAI/ComputeEasy/blob/master/Keras%20Deep%20Learning%20Models%20on%20AWS/images/Deep-Learning-AMI-Status.png)
 
 Your server is now running and ready for you to log in.
 
@@ -77,7 +77,7 @@ Now log in and start using that server instance you have launched.
 `ssh -i keras-aws-keypair.pem ec2-user@54.111.77.77`
 - 4. When prompted, type “yes” and press enter.
 You are now logged into your server.
-![Terminal Login to Deep Learning AMI]()
+![Terminal Login to Deep Learning AMI](https://github.com/PakistanAI/ComputeEasy/blob/master/Keras%20Deep%20Learning%20Models%20on%20AWS/images/Terminal-Login-to-Deep-Learning-AMI.png)
 
 We may need to make two small changes before we can start using Keras. If the AMI has been updated since writing this, you may not need to make these changes
 
