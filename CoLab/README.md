@@ -65,7 +65,7 @@ print('Hello, Colaboratory from Python {}!'.format(sys.version_info[0]))
 **Complete Reference** [Formatting text in Colaboratory: A guide to Colaboratory markdown
 ](https://colab.research.google.com/notebook#fileId=/v2/external/notebooks/markdown_guide.ipynb&scrollTo=tPqPXAKKkzaM)
  
-### [Integration with external dat](https://github.com/PakistanAI/ComputeEasy/blob/master/CoLab/INTEGRATION)
+### [Integration with external data](https://github.com/PakistanAI/ComputeEasy/blob/master/CoLab/INTEGRATION)
 
 ## Move UP and DOWN
 You can move a cell by selecting it and clicking **`+CELL UP`** or **`CELL DOWN`** in the top toolbar. 
