@@ -121,11 +121,11 @@ Remember you are charged by the amount of time that you use the instance. you do
 - 2. Log in to your AWS account with your web browser.
 - 3. Click EC2.
 - 4. Click “Instances” from the left-hand side menu.
-![Review Your List of Running Instances](/images/logo.png)
+![Review Your List of Running Instances](https://github.com/PakistanAI/ComputeEasy/blob/master/Keras%20Deep%20Learning%20Models%20on%20AWS/images/Review-Your-List-of-Running-Instances.png)
 
 - 5. Select your running instance from the list (it may already be selected if you only have one running instance).
 Select Your Running AWS Instance
-![Select Your Running AWS Instance](/images/logo.png)
+![Select Your Running AWS Instance](https://github.com/PakistanAI/ComputeEasy/blob/master/Keras%20Deep%20Learning%20Models%20on%20AWS/images/Select-Your-Running-AWS-Instance.png)
 
 - 6. Click the “Actions” button and select “Instance State” and choose “Terminate”. Confirm that you want to terminate your running instance.
 It may take a number of seconds for the instance to close and to be removed from your list of instances.
